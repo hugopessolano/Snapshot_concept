@@ -22,6 +22,7 @@ def upload_file(file: UploadFile, store_id:str, access_token:str):
     if file.content_type != "application/json": 
         raise HTTPException(400, detail="Invalid document type") 
     else: 
+        os.makedirs(UPLOAD_DIR, exist_ok=True)
         uploaded_file = os.path.join(UPLOAD_DIR, file.filename)
         data = json.loads(file.file.read())
         save_json_data(uploaded_file, data)
