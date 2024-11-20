@@ -78,6 +78,9 @@ def exclude_missing_variants(obj_read:BaseModel, obj_fetched:BaseModel) -> list[
 
 def clusterize(object_list:list, cluster_limit:int) -> list:
     #Divide the provided list in evenly distributed clusters according to the provided cluster_limit
+    if not object_list:
+        return []
+    
     if cluster_limit > len(object_list):
         cluster_limit = len(object_list)
     return [list(array) for array in (np.array_split(object_list, int(np.ceil(len(object_list) / cluster_limit))))]
