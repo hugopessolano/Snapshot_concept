@@ -87,7 +87,7 @@ _Dont forget to replace STORE_ID and USER_ID with the intended store_id and your
 Once you've completed the arguments, just click on the "Execute" button which should be fairly visible: <br>
 ![image](https://github.com/user-attachments/assets/b1c828f0-b5bf-4f95-89a1-a9813a8fcb02)
 
-When you execute a few cool things are going to happen.
+When you hit execute, a few cool things are going to happen.
 On our "Server" side, our console will register what it's doing with a neat little progress bar: <br>
 <img width="842" alt="image" src="https://github.com/user-attachments/assets/e7ea38c5-c191-4b0c-b80d-d026eec5343b">
 
@@ -103,10 +103,10 @@ _(Click on it to download)_
 Similarly to the previous one, this endpoint takes the **store_id** and **access_token** arguments, except this time we'll need to provide the snapshot JSON file consistent with the previously exported one:
 ![image](https://github.com/user-attachments/assets/f206c27d-98d8-45ca-b5f7-a4c564086dc5)
 
-If the file we provide a file which presents no differences from the current state of our store, then no actions will be taken, and nothing will be changed. 
+If the file we provide presents no differences from the current state of our store, no actions will be taken, and nothing will be changed. 
 I'll delete a few products, variants, and modify some data in order to trigger modifications. Keep in mind that **only the products and/or variants detected as changed will be altered or re-created**
 
-Once again, once we execute the magic will start happening on our server side:
+Once again, when we execute the magic will start happening on our server side:
 <img width="770" alt="image" src="https://github.com/user-attachments/assets/18a518d8-03b5-43e4-ad43-21e48b9de92b">
 
 * First it will render the products read from the provided/uploaded file
