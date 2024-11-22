@@ -71,19 +71,8 @@ This will enable the argument fields. Here you will provide the designated argum
 ## The Snapshot endpoint
 This first example is from the **snapshot** endpoint, which takes in:
 * store_id: The ID from the store that we want to generate a snapshot or backup for
-* access_token: The bearer token from our user within the store. You can get it using the following query on the `moltres` database:
-```sql
-SELECT access_token FROM tiendanube.mwp_store_info msi
-INNER JOIN tiendanube.mwp_apps_stores mas
-WHERE msi.id = STORE_ID
-and user_id = USER_ID
-AND msi.id = mas.store_id
-AND mas.app_id = 2602
-ORDER BY mas.created_at DESC
-LIMIT 1;
-```
-_Dont forget to replace STORE_ID and USER_ID with the intended store_id and your own user_id_
-
+* access_token: The bearer token from our user within the store.
+  
 Once you've completed the arguments, just click on the "Execute" button which should be fairly visible: <br>
 ![image](https://github.com/user-attachments/assets/b1c828f0-b5bf-4f95-89a1-a9813a8fcb02)
 
