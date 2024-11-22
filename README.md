@@ -78,7 +78,8 @@ Once you've completed the arguments, just click on the "Execute" button which sh
 
 When you hit execute, a few cool things are going to happen.
 On our "Server" side, our console will register what it's doing with a neat little progress bar: <br>
-<img width="842" alt="image" src="https://github.com/user-attachments/assets/e7ea38c5-c191-4b0c-b80d-d026eec5343b">
+![image](https://github.com/user-attachments/assets/8584db3a-abdf-4ef4-9265-ba4b3ee61097)
+
 
 It'll fetch all the store's products from our API (https://tiendanube.github.io/api-documentation/resources/product) and export them into a JSON. Currently it's stored on the root folder of our application, but it can be quickly changed to a different target.
 
