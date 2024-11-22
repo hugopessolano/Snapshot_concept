@@ -425,8 +425,8 @@ if __name__ == "__main__":
     ########## Following this line are the variables you should edit #################
     ##################################################################################
 
-    STORE_ID = '3734860' 
-    ACCESS_TOKEN = '1809de5c159e5919bfa663e64bff58b2ed80f4df'
+    STORE_ID = 'STORE_ID' 
+    ACCESS_TOKEN = 'ACCESS_TOKEN'
 
     ##################################################################################
     execution_manager = ExecutionManager(STORE_ID, ACCESS_TOKEN)
