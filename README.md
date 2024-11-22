@@ -87,7 +87,8 @@ _In the previously provided example we can see it took 7 seconds to fetch and co
 
 On our Client side, if we scroll down a bit, we'll be able to download the json file which was returned from the API:
 _(Click on it to download)_
-![image](https://github.com/user-attachments/assets/8c032839-a420-4967-924f-90497a3e9fe8)
+![image](https://github.com/user-attachments/assets/839fb6b1-318b-4a7c-accf-bc3554adfc73)
+
 
 ## The Restore endpoint
 Similarly to the previous one, this endpoint takes the **store_id** and **access_token** arguments, except this time we'll need to provide the snapshot JSON file consistent with the previously exported one:
